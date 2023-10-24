@@ -8,6 +8,7 @@ use App\Models\Teachers;
 use App\Models\Submit_acti;
 use App\Models\Activities;
 
+use App\Http\Controllers\CreatePortalController;
 
 use App\Http\Controllers\StudentsController;
 // use App\Http\Controllers\WelcomesController;
@@ -62,4 +63,8 @@ Route::get('/select-a-role', function(){
 });
 
 
-// NORMAL USER
+// CREATING PORTAL CONTROLLER
+
+Route::get('/create', function(){
+    return view('createportal');
+});

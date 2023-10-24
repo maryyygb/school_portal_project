@@ -24,7 +24,7 @@
       <div class="card-body">
         <h5 class="card-title">Create a Portal</h5>
         <p class="card-text">Effortless Record-Keeping Made Simple: Our innovative service takes the stress out of managing activities, assignments, and attendance. With just a few clicks, you can easily track and organize student records, saving time and energy. Say goodbye to messy paperwork and hello to a more efficient and productive teaching experience. Empower yourself with seamless record-keeping and focus on what truly matters!</p>
-        <a href="#" class="btn" id="dash">Create Now</a>
+        <a href="create.blade.php" class="btn" id="dash">Create Now</a>
       </div>
     </div>
   </div>
