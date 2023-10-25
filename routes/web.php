@@ -7,8 +7,12 @@ use App\Models\Students;
 use App\Models\Teachers;
 use App\Models\Submit_acti;
 use App\Models\Activities;
+use App\Models\CreationOfPOrtal;
+
 
 use App\Http\Controllers\CreatePortalController;
+use App\Http\Controllers\CreationOfPortalController;
+
 
 use App\Http\Controllers\StudentsController;
 // use App\Http\Controllers\WelcomesController;
@@ -37,6 +41,10 @@ use App\Http\Controllers\StudentsController;
 //     return view('students.index');
 // });
 
+Route::get('/allcreators', function () {
+    return view('allcreators.index');
+});
+
 
 // Route::get('show_students', [StudentsController::class, 'index']);
 
@@ -54,13 +62,12 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function(){
 
 });
 
+
 // FOR ALL
 Route::get('/', function (){
     return view('index');
 });
-Route::get('/select-a-role', function(){
-    return view('auth.select-a-role');
-});
+
 
 
 // CREATING PORTAL CONTROLLER
@@ -68,3 +75,14 @@ Route::get('/select-a-role', function(){
 Route::get('/create', function(){
     return view('createportal');
 });
+
+
+
+Route::post('createportal', );
+
+// TO SEE ALL CREATORS - FOR ADMIN
+// Route::view('/allcreators', 'allcreators');
+
+Route::get('/allcreator', [CreationOfPortalController::class, 'index']);
+
+Route::get('/allcreators/{id}', [CreationOfPortalController::class, 'show']);

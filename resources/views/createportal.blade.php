@@ -1,7 +1,7 @@
-@extends('create')
+<!-- @extends('create')
 
-@section('content')
+@section('contents')
 
-<h1>asfkjn</h1>
+<h1>Hi there!</h1>
 
-@stop
+@stop -->
